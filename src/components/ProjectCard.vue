@@ -17,11 +17,13 @@ export default {
             <h2>Tipologie</h2>
             <h6 v-for="technology in this.project.technologies">{{ technology.name }}</h6>
             <h2>Descrizione</h2>
-            <p class="card-text">Tecnologia : <br>
+            <div>
+                <div class="card-text">Technology</div>
                 <span v-for="technology in this.nameProject.technologies">
                     {{ technology.name }},
                 </span>
-            </p>
+            </div>
+
         </div>
     </div>
 </template>
