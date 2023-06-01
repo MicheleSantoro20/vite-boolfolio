@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-3" v-for="project in projects">
+            <div class="col-4 mb-4" v-for="project in projects">
                 <ProjectCard :project="project"></ProjectCard>
             </div>
             
@@ -24,6 +24,7 @@
 
 
 <script>
+
 import axios from 'axios';
 import ProjectCard from '../components/ProjectCard.vue';
 import { store } from '../store.js';
@@ -72,5 +73,6 @@ export default {
 
 
 <style scoped lang="scss">
+
 </style>
 
